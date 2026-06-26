@@ -1,10 +1,3 @@
-/* =============================================================
-   NeuralFlow — main.js
-   Premium motion system: cursor glow, magnetic buttons, 
-   spotlight effects, parallax, particle systems, scroll reveals,
-   counter animations, card tilt, ripple effects, and more.
-   ============================================================= */
-
 'use strict';
 
 // ===== PRICING MATRIX =====
