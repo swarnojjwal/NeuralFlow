@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="NeuralFlow — AI-driven data automation platform. Connect, transform, and orchestrate your entire data stack with zero-code pipelines.">
+  <meta name="keywords" content="AI automation, data pipeline, no-code, machine learning, data integration">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="NeuralFlow — Next-Gen AI Data Automation">
+  <meta property="og:description"
+    content="Automate the impossible. Ship the future. Zero-code AI pipelines for modern data teams.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/og-image.png">
+
+  <title>NeuralFlow — AI-Powered Data Automation Platform</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ===== GLOBAL BACKGROUND LAYERS ===== -->
+  <div class="bg-system" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="bg-noise"></div>
+    <div class="bg-blob bg-blob--1"></div>
+    <div class="bg-blob bg-blob--2"></div>
+    <div class="bg-blob bg-blob--3"></div>
+    <div class="bg-particles">
+      <span class="bg-particle" style="--x:12%;--y:18%;--d:5.2s;--delay:0s"></span>
+      <span class="bg-particle" style="--x:78%;--y:24%;--d:4.1s;--delay:0.8s"></span>
+      <span class="bg-particle" style="--x:34%;--y:62%;--d:6.3s;--delay:1.4s"></span>
+      <span class="bg-particle" style="--x:65%;--y:44%;--d:3.9s;--delay:0.3s"></span>
+      <span class="bg-particle" style="--x:90%;--y:70%;--d:5.7s;--delay:2.1s"></span>
+      <span class="bg-particle" style="--x:22%;--y:85%;--d:4.8s;--delay:1.0s"></span>
+      <span class="bg-particle" style="--x:55%;--y:10%;--d:6.1s;--delay:1.7s"></span>
+      <span class="bg-particle" style="--x:8%;--y:50%;--d:3.6s;--delay:0.5s"></span>
+    </div>
+  </div>
+
+  <!-- ===== CURSOR GLOW ===== -->
+  <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="NeuralFlow Home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true">
+          <path fill="currentColor"
+            d="M8.372 1.349a.75.75 0 0 0-.744 0l-4.81 2.748L8 7.131l5.182-3.034zM14 5.357L8.75 8.43v6.005l4.872-2.784A.75.75 0 0 0 14 11zm-6.75 9.078V8.43L2 5.357V11c0 .27.144.518.378.651z" />
+        </svg>
+        NeuralFlow
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+        <button class="nav-search-btn" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" aria-hidden="true">
+            <path fill="currentColor"
+              d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33l-1.42 1.42l-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
+          </svg>
+        </button>
+        <a href="#" class="nav-cta">Get Started</a>
+      </nav>
+
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section id="hero" class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-grid-lines"></div>
+        <div class="hero-scanline"></div>
+        <div class="hero-particle" style="top:20%;left:8%;animation-delay:0s;"></div>
+        <div class="hero-particle" style="top:60%;left:20%;animation-delay:1.2s;"></div>
+        <div class="hero-particle" style="top:30%;left:80%;animation-delay:0.6s;"></div>
+        <div class="hero-particle" style="top:75%;left:65%;animation-delay:1.8s;"></div>
+        <div class="hero-particle" style="top:15%;left:50%;animation-delay:0.9s;"></div>
+        <div class="hero-glow hero-glow--1"></div>
+        <div class="hero-glow hero-glow--2"></div>
+        <!-- Aurora layers -->
+        <div class="aurora aurora--1"></div>
+        <div class="aurora aurora--2"></div>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-badge">⚡ Now in Public Beta</span>
+          <h1>Automate the Impossible.<br>Ship the Future.</h1>
+          <p class="hero-sub">NeuralFlow connects, transforms, and orchestrates your entire data stack with zero-code AI
+            automation pipelines.</p>
+          <div class="hero-ctas">
+            <a href="#" class="btn-primary">Start for Free</a>
+            <a href="#" class="btn-secondary">Watch Demo</a>
+          </div>
+          <!-- Stat chips -->
+          <div class="hero-stats" aria-hidden="true">
+            <div class="hero-stat"><span class="hero-stat-value">10k+</span><span class="hero-stat-label">Teams</span>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat"><span class="hero-stat-value">200+</span><span
+                class="hero-stat-label">Integrations</span></div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat"><span class="hero-stat-value">99.9%</span><span class="hero-stat-label">Uptime</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-visual-canvas">
+            <!-- Light rays -->
+            <div class="light-ray light-ray--1"></div>
+            <div class="light-ray light-ray--2"></div>
+
+            <!--
+              Symmetric hub layout: center node at (50%, 50%)
+              4 satellite nodes at the cardinal corners of a circle.
+              SVG viewBox 400x400 so CSS % positions map cleanly:
+                Center:        (200, 200) → 50%, 50%
+                Top-left:      (68,  68)  → 17%, 17%
+                Top-right:     (332, 68)  → 83%, 17%
+                Bottom-left:   (68,  332) → 17%, 83%
+                Bottom-right:  (332, 332) → 83%, 83%
+              Node size 64px → half = 32px offset used in top/left.
+            -->
+
+            <!-- Flow lines SVG (matches node positions exactly) -->
+            <svg class="flow-lines" viewBox="0 0 400 400" fill="none" preserveAspectRatio="xMidYMid meet">
+              <defs>
+                <linearGradient id="lineGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#FFC801" stop-opacity="0.05" />
+                  <stop offset="50%" stop-color="#FFC801" stop-opacity="0.45" />
+                  <stop offset="100%" stop-color="#FF9932" stop-opacity="0.05" />
+                </linearGradient>
+                <linearGradient id="lineGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#FF9932" stop-opacity="0.05" />
+                  <stop offset="50%" stop-color="#FFC801" stop-opacity="0.45" />
+                  <stop offset="100%" stop-color="#FFC801" stop-opacity="0.05" />
+                </linearGradient>
+                <filter id="glow-filter">
+                  <feGaussianBlur stdDeviation="2.5" result="blur" />
+                  <feMerge>
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+
+              <!-- Subtle outer ring connecting all 4 satellites -->
+              <circle cx="200" cy="200" r="148" stroke="rgba(255,200,1,0.07)" stroke-width="1" stroke-dasharray="4 8" />
+
+              <!-- Spokes: each satellite → center -->
+              <line x1="68" y1="68" x2="200" y2="200" stroke="url(#lineGrad1)" stroke-width="1.5"
+                stroke-dasharray="6 6" />
+              <line x1="332" y1="68" x2="200" y2="200" stroke="url(#lineGrad2)" stroke-width="1.5"
+                stroke-dasharray="6 6" />
+              <line x1="68" y1="332" x2="200" y2="200" stroke="url(#lineGrad2)" stroke-width="1.5"
+                stroke-dasharray="6 6" />
+              <line x1="332" y1="332" x2="200" y2="200" stroke="url(#lineGrad1)" stroke-width="1.5"
+                stroke-dasharray="6 6" />
+
+              <!-- Subtle glow overlay on spokes -->
+              <line x1="68" y1="68" x2="200" y2="200" stroke="#FFC801" stroke-width="0.6" stroke-opacity="0.18"
+                filter="url(#glow-filter)" />
+              <line x1="332" y1="68" x2="200" y2="200" stroke="#FF9932" stroke-width="0.6" stroke-opacity="0.18"
+                filter="url(#glow-filter)" />
+              <line x1="68" y1="332" x2="200" y2="200" stroke="#FF9932" stroke-width="0.6" stroke-opacity="0.18"
+                filter="url(#glow-filter)" />
+              <line x1="332" y1="332" x2="200" y2="200" stroke="#FFC801" stroke-width="0.6" stroke-opacity="0.18"
+                filter="url(#glow-filter)" />
+
+              <!-- Animated data packets flowing from satellites → center -->
+              <circle r="3.5" fill="#FFC801" filter="url(#glow-filter)" opacity="0.95">
+                <animateMotion dur="2.2s" repeatCount="indefinite" begin="0s" path="M68,68 L200,200" />
+              </circle>
+              <circle r="3.5" fill="#FF9932" filter="url(#glow-filter)" opacity="0.95">
+                <animateMotion dur="2.6s" repeatCount="indefinite" begin="0.7s" path="M332,68 L200,200" />
+              </circle>
+              <circle r="3.5" fill="#FFC801" filter="url(#glow-filter)" opacity="0.95">
+                <animateMotion dur="2.4s" repeatCount="indefinite" begin="1.3s" path="M68,332 L200,200" />
+              </circle>
+              <circle r="3.5" fill="#FF9932" filter="url(#glow-filter)" opacity="0.95">
+                <animateMotion dur="2.8s" repeatCount="indefinite" begin="0.4s" path="M332,332 L200,200" />
+              </circle>
+              <!-- Secondary slower packets (center → satellites) -->
+              <circle r="2" fill="#FFC801" opacity="0.45">
+                <animateMotion dur="3.5s" repeatCount="indefinite" begin="1.1s" path="M200,200 L68,68" />
+              </circle>
+              <circle r="2" fill="#FF9932" opacity="0.45">
+                <animateMotion dur="4s" repeatCount="indefinite" begin="2.0s" path="M200,200 L332,332" />
+              </circle>
+            </svg>
+
+            <!-- Pulse rings centered on the hub node -->
+            <div class="pulse-ring" style="top:calc(50% - 40px); left:calc(50% - 40px);"></div>
+            <div class="pulse-ring pulse-ring--2" style="top:calc(50% - 40px); left:calc(50% - 40px);"></div>
+
+            <!-- CENTER HUB node -->
+            <div class="flow-node flow-node--hub">
+              <!-- NeuralFlow cube icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true">
+                <path fill="currentColor"
+                  d="M8.372 1.349a.75.75 0 0 0-.744 0l-4.81 2.748L8 7.131l5.182-3.034zM14 5.357L8.75 8.43v6.005l4.872-2.784A.75.75 0 0 0 14 11zm-6.75 9.078V8.43L2 5.357V11c0 .27.144.518.378.651z" />
+              </svg>
+            </div>
+
+            <!-- TOP-LEFT satellite: Pipeline -->
+            <div class="flow-node flow-node--tl">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" aria-hidden="true">
+                <path
+                  d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93c.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 0 1 1.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204c.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78c-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 0 1-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107c-.397.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93c-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 0 1-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204c-.165-.397-.505-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78c.165-.398.143-.854-.107-1.204l-.527-.738a1.125 1.125 0 0 1 .12-1.45l.773-.773a1.125 1.125 0 0 1 1.45-.12l.737.527c.35.25.807.272 1.204.107c.397-.165.71-.505.78-.929l.15-.894Z" />
+                <path d="M15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0Z" />
+              </svg>
+            </div>
+
+            <!-- TOP-RIGHT satellite: Sync -->
+            <div class="flow-node flow-node--tr">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" aria-hidden="true">
+                <path
+                  d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+              </svg>
+            </div>
+
+            <!-- BOTTOM-LEFT satellite: Analytics -->
+            <div class="flow-node flow-node--bl">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" aria-hidden="true">
+                <path d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" />
+                <path d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z" />
+              </svg>
+            </div>
+
+            <!-- BOTTOM-RIGHT satellite: Growth -->
+            <div class="flow-node flow-node--br">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" aria-hidden="true">
+                <path
+                  d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 0 1 5.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOCIAL PROOF ===== -->
+    <section id="social-proof" class="social-proof" aria-label="Trusted companies">
+      <div class="container">
+        <p class="social-proof-label">Trusted by 10,000+ teams at</p>
+      </div>
+      <div style="overflow:hidden;">
+        <div class="marquee-track" aria-hidden="true">
+          <span class="company-chip">Stripe</span>
+          <span class="company-chip">Notion</span>
+          <span class="company-chip">Linear</span>
+          <span class="company-chip">Vercel</span>
+          <span class="company-chip">Supabase</span>
+          <span class="company-chip">Figma</span>
+          <span class="company-chip">Stripe</span>
+          <span class="company-chip">Notion</span>
+          <span class="company-chip">Linear</span>
+          <span class="company-chip">Vercel</span>
+          <span class="company-chip">Supabase</span>
+          <span class="company-chip">Figma</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURES ===== -->
+    <section id="features" class="features">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Platform</span>
+          <h2>Everything You Need to Automate Data</h2>
+          <p>From pipeline building to real-time analytics, NeuralFlow handles the heavy lifting so you can focus on
+            shipping.</p>
+        </div>
+
+        <!-- Bento Grid (Desktop) -->
+        <div class="bento-grid" id="bento-grid">
+          <div class="bento-card span-2 reveal" data-index="0">
+            <div class="bento-card-glow"></div>
+            <div class="bento-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" aria-hidden="true">
+                <path
+                  d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93c.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 0 1 1.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204c.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78c-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 0 1-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107c-.397.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93c-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 0 1-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204c-.165-.397-.505-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78c.165-.398.143-.854-.107-1.204l-.527-.738a1.125 1.125 0 0 1 .12-1.45l.773-.773a1.125 1.125 0 0 1 1.45-.12l.737.527c.35.25.807.272 1.204.107c.397-.165.71-.505.78-.929l.15-.894Z" />
+                <path d="M15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0Z" />
+              </svg>
+            </div>
+            <h3>Intelligent Pipeline Builder</h3>
+            <p>Drag, connect, and deploy AI-powered data pipelines in minutes. No code required.</p>
+          </div>
+
+          <div class="bento-card reveal" data-index="1">
+            <div class="bento-card-glow"></div>
+            <div class="bento-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" aria-hidden="true">
+                <path
+                  d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+              </svg>
+            </div>
+            <h3>Real-Time Data Sync</h3>
+            <p>Bidirectional sync across 200+ data sources with sub-second latency guarantees.</p>
+          </div>
+
+          <div class="bento-card reveal" data-index="2">
+            <div class="bento-card-glow"></div>
+            <div class="bento-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" aria-hidden="true">
+                <path d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" />
+                <path d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z" />
+              </svg>
+            </div>
+            <h3>Predictive Analytics</h3>
+            <p>Surface insights before they happen with built-in ML forecasting models.</p>
+          </div>
+
+          <div class="bento-card reveal" data-index="3">
+            <div class="bento-card-glow"></div>
+            <div class="bento-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" fill-rule="evenodd"
+                  d="M19.902 4.098a3.75 3.75 0 0 0-5.304 0l-4.5 4.5a3.75 3.75 0 0 0 1.035 6.037a.75.75 0 0 1-.646 1.353a5.25 5.25 0 0 1-1.449-8.45l4.5-4.5a5.25 5.25 0 1 1 7.424 7.424l-1.757 1.757a.75.75 0 1 1-1.06-1.06l1.757-1.757a3.75 3.75 0 0 0 0-5.304Zm-7.389 4.267a.75.75 0 0 1 1-.353a5.25 5.25 0 0 1 1.449 8.45l-4.5 4.5a5.25 5.25 0 1 1-7.424-7.424l1.757-1.757a.75.75 0 1 1 1.06 1.06l-1.757 1.757a3.75 3.75 0 1 0 5.304 5.304l4.5-4.5a3.75 3.75 0 0 0-1.035-6.037a.75.75 0 0 1-.354-1Z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+            <h3>Smart Integrations</h3>
+            <p>One-click connectors to your entire SaaS stack. Stripe, Notion, Salesforce, and more.</p>
+          </div>
+
+          <div class="bento-card reveal" data-index="4">
+            <div class="bento-card-glow"></div>
+            <div class="bento-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" aria-hidden="true">
+                <path
+                  d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 0 1 5.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
+              </svg>
+            </div>
+            <h3>Growth Monitoring</h3>
+            <p>Track KPIs, anomalies, and pipeline health across your entire org in a single view.</p>
+          </div>
+
+          <div class="bento-card span-2 reveal" data-index="5">
+            <div class="bento-card-glow"></div>
+            <div class="bento-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true">
+                <path fill="currentColor"
+                  d="M8.372 1.349a.75.75 0 0 0-.744 0l-4.81 2.748L8 7.131l5.182-3.034zM14 5.357L8.75 8.43v6.005l4.872-2.784A.75.75 0 0 0 14 11zm-6.75 9.078V8.43L2 5.357V11c0 .27.144.518.378.651z" />
+              </svg>
+            </div>
+            <h3>Unified Dashboard</h3>
+            <p>A single pane of glass for data lineage, transformation logs, and team collaboration.</p>
+          </div>
+        </div>
+
+        <!-- Accordion (Mobile) -->
+        <div class="accordion-list" id="accordion-list">
+          <div class="accordion-item" data-index="0">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="acc-panel-0">
+              <span class="accordion-trigger-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" aria-hidden="true">
+                  <path
+                    d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93c.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 0 1 1.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204c.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78c-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 0 1-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107c-.397.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93c-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 0 1-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204c-.165-.397-.505-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78c.165-.398.143-.854-.107-1.204l-.527-.738a1.125 1.125 0 0 1 .12-1.45l.773-.773a1.125 1.125 0 0 1 1.45-.12l.737.527c.35.25.807.272 1.204.107c.397-.165.71-.505.78-.929l.15-.894Z" />
+                  <path d="M15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0Z" />
+                </svg>
+              </span>
+              <span class="accordion-trigger-text">Intelligent Pipeline Builder</span>
+              <svg class="accordion-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                aria-hidden="true">
+                <path d="m19.5 8.25l-7.5 7.5l-7.5-7.5" />
+              </svg>
+            </button>
+            <div class="accordion-panel" id="acc-panel-0" role="region">
+              <div class="accordion-panel-inner">Drag, connect, and deploy AI-powered data pipelines in minutes. No code
+                required.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item" data-index="1">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="acc-panel-1">
+              <span class="accordion-trigger-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" aria-hidden="true">
+                  <path
+                    d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+                </svg>
+              </span>
+              <span class="accordion-trigger-text">Real-Time Data Sync</span>
+              <svg class="accordion-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                aria-hidden="true">
+                <path d="m19.5 8.25l-7.5 7.5l-7.5-7.5" />
+              </svg>
+            </button>
+            <div class="accordion-panel" id="acc-panel-1" role="region">
+              <div class="accordion-panel-inner">Bidirectional sync across 200+ data sources with sub-second latency
+                guarantees.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item" data-index="2">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="acc-panel-2">
+              <span class="accordion-trigger-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" aria-hidden="true">
+                  <path d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" />
+                  <path d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z" />
+                </svg>
+              </span>
+              <span class="accordion-trigger-text">Predictive Analytics</span>
+              <svg class="accordion-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                aria-hidden="true">
+                <path d="m19.5 8.25l-7.5 7.5l-7.5-7.5" />
+              </svg>
+            </button>
+            <div class="accordion-panel" id="acc-panel-2" role="region">
+              <div class="accordion-panel-inner">Surface insights before they happen with built-in ML forecasting
+                models.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item" data-index="3">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="acc-panel-3">
+              <span class="accordion-trigger-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor" fill-rule="evenodd"
+                    d="M19.902 4.098a3.75 3.75 0 0 0-5.304 0l-4.5 4.5a3.75 3.75 0 0 0 1.035 6.037a.75.75 0 0 1-.646 1.353a5.25 5.25 0 0 1-1.449-8.45l4.5-4.5a5.25 5.25 0 1 1 7.424 7.424l-1.757 1.757a.75.75 0 1 1-1.06-1.06l1.757-1.757a3.75 3.75 0 0 0 0-5.304Zm-7.389 4.267a.75.75 0 0 1 1-.353a5.25 5.25 0 0 1 1.449 8.45l-4.5 4.5a5.25 5.25 0 1 1-7.424-7.424l1.757-1.757a.75.75 0 1 1 1.06 1.06l-1.757 1.757a3.75 3.75 0 1 0 5.304 5.304l4.5-4.5a3.75 3.75 0 0 0-1.035-6.037a.75.75 0 0 1-.354-1Z"
+                    clip-rule="evenodd" />
+                </svg>
+              </span>
+              <span class="accordion-trigger-text">Smart Integrations</span>
+              <svg class="accordion-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                aria-hidden="true">
+                <path d="m19.5 8.25l-7.5 7.5l-7.5-7.5" />
+              </svg>
+            </button>
+            <div class="accordion-panel" id="acc-panel-3" role="region">
+              <div class="accordion-panel-inner">One-click connectors to your entire SaaS stack. Stripe, Notion,
+                Salesforce, and more.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item" data-index="4">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="acc-panel-4">
+              <span class="accordion-trigger-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" aria-hidden="true">
+                  <path
+                    d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 0 1 5.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
+                </svg>
+              </span>
+              <span class="accordion-trigger-text">Growth Monitoring</span>
+              <svg class="accordion-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                aria-hidden="true">
+                <path d="m19.5 8.25l-7.5 7.5l-7.5-7.5" />
+              </svg>
+            </button>
+            <div class="accordion-panel" id="acc-panel-4" role="region">
+              <div class="accordion-panel-inner">Track KPIs, anomalies, and pipeline health across your entire org in a
+                single view.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item" data-index="5">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="acc-panel-5">
+              <span class="accordion-trigger-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true">
+                  <path fill="currentColor"
+                    d="M8.372 1.349a.75.75 0 0 0-.744 0l-4.81 2.748L8 7.131l5.182-3.034zM14 5.357L8.75 8.43v6.005l4.872-2.784A.75.75 0 0 0 14 11zm-6.75 9.078V8.43L2 5.357V11c0 .27.144.518.378.651z" />
+                </svg>
+              </span>
+              <span class="accordion-trigger-text">Unified Dashboard</span>
+              <svg class="accordion-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                aria-hidden="true">
+                <path d="m19.5 8.25l-7.5 7.5l-7.5-7.5" />
+              </svg>
+            </button>
+            <div class="accordion-panel" id="acc-panel-5" role="region">
+              <div class="accordion-panel-inner">A single pane of glass for data lineage, transformation logs, and team
+                collaboration.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRICING ===== -->
+    <section id="pricing" class="pricing">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Pricing</span>
+          <h2>Simple, Transparent Pricing</h2>
+          <p>Start free. Scale as you grow. No hidden fees, no surprise invoices.</p>
+        </div>
+
+        <div class="pricing-controls reveal">
+          <div class="billing-toggle" id="billing-toggle" role="radiogroup" aria-label="Billing period">
+            <button class="billing-option active" data-billing="monthly" role="radio"
+              aria-checked="true">Monthly</button>
+            <button class="billing-option" data-billing="annual" role="radio" aria-checked="false">Annual <span
+                class="save-badge">Save 20%</span></button>
+            <div class="billing-slider" id="billing-slider"></div>
+          </div>
+
+          <div class="currency-selector" id="currency-selector" role="radiogroup" aria-label="Currency">
+            <button class="currency-option" data-currency="INR" role="radio" aria-checked="false">₹ INR</button>
+            <button class="currency-option active" data-currency="USD" role="radio" aria-checked="true">$ USD</button>
+            <button class="currency-option" data-currency="EUR" role="radio" aria-checked="false">€ EUR</button>
+          </div>
+        </div>
+
+        <div class="pricing-grid" id="pricing-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Social Proof</span>
+          <h2>Loved by Data Teams Everywhere</h2>
+          <p>Hear from the engineers and leaders who use NeuralFlow every day.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card reveal">
+            <p class="testimonial-quote">NeuralFlow cut our data pipeline setup from 3 weeks to 2 hours. It's absurdly
+              powerful.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar avatar-1" aria-hidden="true">PM</div>
+              <div>
+                <div class="testimonial-name">Priya Mehta</div>
+                <div class="testimonial-role">Head of Data, Stripe</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <p class="testimonial-quote">The bento dashboard alone is worth the price. Our whole team lives in it.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar avatar-2" aria-hidden="true">AN</div>
+              <div>
+                <div class="testimonial-name">Arjun Nair</div>
+                <div class="testimonial-role">CTO, Linear</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <p class="testimonial-quote">Finally, an automation platform that doesn't require a PhD to configure.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar avatar-3" aria-hidden="true">SK</div>
+              <div>
+                <div class="testimonial-name">Sara Kim</div>
+                <div class="testimonial-role">Product Lead, Vercel</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo" aria-label="NeuralFlow Home">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true">
+              <path fill="currentColor"
+                d="M8.372 1.349a.75.75 0 0 0-.744 0l-4.81 2.748L8 7.131l5.182-3.034zM14 5.357L8.75 8.43v6.005l4.872-2.784A.75.75 0 0 0 14 11zm-6.75 9.078V8.43L2 5.357V11c0 .27.144.518.378.651z" />
+            </svg>
+            NeuralFlow
+          </a>
+          <p class="footer-tagline">AI-driven data automation for modern teams. Connect, transform, and orchestrate your
+            entire data stack.</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Integrations</a></li>
+            <li><a href="#">Changelog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor" fill-rule="evenodd"
+                    d="M19.902 4.098a3.75 3.75 0 0 0-5.304 0l-4.5 4.5a3.75 3.75 0 0 0 1.035 6.037a.75.75 0 0 1-.646 1.353a5.25 5.25 0 0 1-1.449-8.45l4.5-4.5a5.25 5.25 0 1 1 7.424 7.424l-1.757 1.757a.75.75 0 1 1-1.06-1.06l1.757-1.757a3.75 3.75 0 0 0 0-5.304Zm-7.389 4.267a.75.75 0 0 1 1-.353a5.25 5.25 0 0 1 1.449 8.45l-4.5 4.5a5.25 5.25 0 1 1-7.424-7.424l1.757-1.757a.75.75 0 1 1 1.06 1.06l-1.757 1.757a3.75 3.75 0 1 0 5.304 5.304l4.5-4.5a3.75 3.75 0 0 0-1.035-6.037a.75.75 0 0 1-.354-1Z"
+                    clip-rule="evenodd" />
+                </svg>
+                Documentation
+              </a></li>
+            <li><a href="#">API Reference</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Status</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">DPA</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span class="footer-copyright">&copy; 2026 NeuralFlow, Inc. All rights reserved.</span>
+        <span class="footer-built">Built with NeuralFlow</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
